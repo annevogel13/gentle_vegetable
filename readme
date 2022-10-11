@@ -1,4 +1,4 @@
-Hi 
+# Self assesement
 
 
 start with creating two files : 
@@ -11,11 +11,44 @@ Execute the following steps:
 * Initiate the index.html file with the standard html lines 
 * Fill for the title "Gentle Vegetable" 
 * Create a top-level header as the following picture  :
-        {{ insert a picture }}
-        !! don't forget to link the style.css file to the index.html !!
-* Create two unorderd lists : 
-    ** green vegetables
-    ** orange vegetables 
-    (for inspiration see the final website)
 
-* Add a green background for the green vegetables (idem for the orange one)
+{{ insert a picture }}
+!! don't forget to link the style.css file to the index.html !!
+
+* Create two unorderd lists : 
+    * green vegetables
+    * orange vegetables 
+    (for inspiration see the final website)
+* Add a green background for the green vegetables (idem for the orange one) 
+
+***
+
+## Exercise 2 
+
+To give our webpage more color, we want to add an image to the website. In the folder **images** you can find the images I used. Add the images to the html page. And use CSS styling to display to images with : 
+* border of 3px
+* black border
+* width of border thick 
+* add alt description 
+
+***
+
+## Exercise 3
+
+Now to make navigation a bit easier on our webpage. We are going to add anchors to our page. You can see this as the beginning of a navigation bar. 
+
+Start by creating a div at the top of the page. 
+
+
+
+## Exercise 3
+
+Now we want to display to two list side by side. There are multiple ways to do this. Choose the way you feel the most comfortable with. 
+
+hidden : 
+* creation of 2 div's 
+* changing inline-block properties 
+* changing the width propertie 
+
+But now, the page looks kind of ugly. 
+So now we want to make sure that the lists have the same height 

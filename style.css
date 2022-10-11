@@ -3,10 +3,22 @@ h1 {
     color: tomato;
 }
 
+.img_veggies {
+    max-width : 30%; 
+    border-style: double;
+    border-width:thick;
+
+}
+
 #green {
     background-color: lightgreen;
+    /*display : inline-block;   */
+    
 }
 
 #orange { 
     background-color: orange;
+    /*display : inline-block;   */
+
 }
+
