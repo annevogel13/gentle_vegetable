@@ -35,9 +35,14 @@ To give our webpage more color, we want to add an image to the website. In the f
 
 ## Exercise 3
 
-Now to make navigation a bit easier on our webpage. We are going to add anchors to our page. You can see this as the beginning of a navigation bar. 
+Now to make navigation a bit easier on our webpage. We are going to add bookmarks (anchors) to our page. You can see this as the beginning of a navigation bar. 
 
-Start by creating a div at the top of the page. 
+Start by creating a unoderded list at the top of the page. And then do the following steps : 
+* change the list style to none 
+* change the block display 
+* give a  border 
+* add id-tags to the green and orange list 
+* add to the li-tags in the navbar the a-tag 
 
 
 
