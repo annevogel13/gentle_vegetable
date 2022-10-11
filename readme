@@ -1,19 +1,23 @@
 # Self assesement
 
+## Level : Beginner
 
 start with creating two files : 
 * index.html
 * style.css 
 
-## Exercise 1 
+### Exercise 1 
 
 Execute the following steps: 
 * Initiate the index.html file with the standard html lines 
 * Fill for the title "Gentle Vegetable" 
-* Create a top-level header as the following picture  :
+* Create a top-level header with 
+    * line under and above the title 
+    * a different color 
+    * a different font 
+    * aligned to the center 
 
-{{ insert a picture }}
-!! don't forget to link the style.css file to the index.html !!
+    **Don't forget to link the style.css file to the index.html**
 
 * Create two unorderd lists : 
     * green vegetables
@@ -23,7 +27,7 @@ Execute the following steps:
 
 ***
 
-## Exercise 2 
+### Exercise 2 
 
 To give our webpage more color, we want to add an image to the website. In the folder **images** you can find the images I used. Add the images to the html page. And use CSS styling to display to images with : 
 * border of 3px
@@ -33,7 +37,7 @@ To give our webpage more color, we want to add an image to the website. In the f
 
 ***
 
-## Exercise 3
+### Exercise 3
 
 Now to make navigation a bit easier on our webpage. We are going to add bookmarks (anchors) to our page. You can see this as the beginning of a navigation bar. 
 
@@ -44,9 +48,12 @@ Start by creating a unoderded list at the top of the page. And then do the follo
 * add id-tags to the green and orange list 
 * add to the li-tags in the navbar the a-tag 
 
+***
 
 
-## Exercise 3
+## Level : Intermediate 
+
+### Exercise 1
 
 Now we want to display to two list side by side. There are multiple ways to do this. Choose the way you feel the most comfortable with. 
 
@@ -54,6 +61,14 @@ hidden :
 * creation of 2 div's 
 * changing inline-block properties 
 * changing the width propertie 
+* creating table (very difficult)
 
 But now, the page looks kind of ugly. 
-So now we want to make sure that the lists have the same height 
+So now we want to centeralise the text inside the div.
+This causes the list to look funny. So we want to remove the list symboles
+
+***
+
+### Exercice 2 
+
+Ofcourse there a more colors vegetables and if we want to display them 
