@@ -1,0 +1,21 @@
+Hi 
+
+
+start with creating two files : 
+* index.html
+* style.css 
+
+## Exercise 1 
+
+Execute the following steps: 
+* Initiate the index.html file with the standard html lines 
+* Fill for the title "Gentle Vegetable" 
+* Create a top-level header as the following picture  :
+        {{ insert a picture }}
+        !! don't forget to link the style.css file to the index.html !!
+* Create two unorderd lists : 
+    ** green vegetables
+    ** orange vegetables 
+    (for inspiration see the final website)
+
+* Add a green background for the green vegetables (idem for the orange one)
