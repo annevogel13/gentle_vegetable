@@ -71,4 +71,10 @@ This causes the list to look funny. So we want to remove the list symboles
 
 ### Exercice 2 
 
-Ofcourse there a more colors vegetables and if we want to display them 
+Ofcourse there a more colors vegetables and if we want to display them we will need flexboxes. 
+
+First let create two more vegetable lists:
+* red veggies
+* yellow veggies 
+
+Now lets create flexboxes 

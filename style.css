@@ -11,39 +11,40 @@ h1 {
 }
 
 .img_veggies {
-    max-width : 30%; 
+    width : 250px; 
     border-style: double;
     border-width:thick;
 
 }
 
+.veggiesList{
+    display : inline-block;   
+    text-align: center;
+}
+
+.veggiesList li {
+    list-style:none;
+}
+
 #green {
     background-color: lightgreen;
-    display : inline-block;   
-    max-width : 50%;
-    text-align: center; 
+}
+
+#red {
+    background-color: red;
 }
 
 #orange { 
     background-color: orange;
-    display : inline-block;   
-    max-width : 50%;
-    text-align: center; 
-    
 }
 
-#green li {
-    list-style:none;
-}
-
-#orange li {
-    list-style:none;
+#yellow { 
+    background-color: yellow;
 }
 
 #navbar {
     list-style : none ; 
     display: inline-block; 
-
 }
 
 #navbar li {
@@ -51,5 +52,4 @@ h1 {
     border: 1px solid black ;
     background-color: lightskyblue;
     padding : 10px; 
-
 }
