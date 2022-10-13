@@ -1,3 +1,5 @@
+/* Navigation bar */
+
 #navbar {
     list-style : none ; 
     display: inline-block; 
@@ -10,6 +12,7 @@
     padding : 10px; 
 }
 
+/* Headers */
 
 h1 {
     color : white; 
@@ -26,6 +29,7 @@ h2 {
     text-align: center;
 }
 
+/* Flex Container */ 
 
 .flexContainer{
     display : flex; 
@@ -34,12 +38,15 @@ h2 {
     justify-content: space-around;
 }
 
+/* Grid Container */ 
+
 .gridContainer{
     display: grid;
    /* grid-template-columns: auto auto; */ 
     justify-content: space-between;
 }
 
+/* Images */ 
 
 .img_veggies {
     width : 250px; 
@@ -47,6 +54,8 @@ h2 {
     border-width:thick;
 
 }
+
+/* General properties of the veggies list */ 
 
 .veggiesList{
     /*display : inline-block; /* Deze verwijderen voor flexboxes */   
@@ -58,6 +67,7 @@ h2 {
     list-style:none;
 }
 
+/* More specific properties of each veggies list */
 #green {
     background-color: lightgreen;
     grid-column : 1 / 3;

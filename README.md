@@ -6,6 +6,8 @@ start with creating two files :
 * index.html
 * style.css 
 
+***
+
 ### Exercise 1 
 
 Execute the following steps: 
