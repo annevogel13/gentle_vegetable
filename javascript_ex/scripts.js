@@ -97,3 +97,14 @@ function check_veggie_unique22(name_array, name_veggie){
 
 //console.log(check_veggie_unique22(red_veggies, "Rhubarb"))
 //console.log(check_veggie_unique22(red_veggies, "Rhubarbss"))
+
+/*
+    * automate/update the way to display the array_veggies 
+    * add veggie with form-type input + confirmation 
+        --> use an general adding input 
+        --> swtich between the colors 
+    * delete buttons next to the veggies names 
+
+    // finish in the bus 
+
+*/ 
