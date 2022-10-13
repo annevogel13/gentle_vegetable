@@ -120,3 +120,11 @@ And observe the changes.
 
 For more properties about the grids use the [css grid page on the w3schools website](https://www.w3schools.com/css/css_grid.asp). And try out the properties in css and if you have questions. Ask them ;) 
 
+## Exercise 4 
+Make a group of two people.
+One person is going to prepare an explanation about the css grid and how it works. And why it good to use it. The other person is going to prepare the explanation about the flexboxes. 
+
+When you prepared your explanation you will give it to the other one. And feel free to asks them more questions. 
+
+Good luck 
+
