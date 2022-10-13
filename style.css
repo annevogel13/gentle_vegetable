@@ -1,3 +1,15 @@
+#navbar {
+    list-style : none ; 
+    display: inline-block; 
+}
+
+#navbar li {
+    display : inline-block; 
+    border: 1px solid black ;
+    background-color: lightskyblue;
+    padding : 10px; 
+}
+
 
 h1 {
     color : white; 
@@ -10,6 +22,19 @@ h1 {
 
 }
 
+h2 {
+    text-align: center;
+}
+
+
+.flexContainer{
+    display : flex; 
+    flex-direction: row;
+    flex-wrap : wrap; 
+    justify-content: space-around;
+}
+
+
 .img_veggies {
     width : 250px; 
     border-style: double;
@@ -18,8 +43,9 @@ h1 {
 }
 
 .veggiesList{
-    display : inline-block;   
-    text-align: center;
+    /*display : inline-block; /* Deze verwijderen voor flexboxes */   
+    padding : 10px; 
+    text-align: center;  
 }
 
 .veggiesList li {
@@ -42,14 +68,3 @@ h1 {
     background-color: yellow;
 }
 
-#navbar {
-    list-style : none ; 
-    display: inline-block; 
-}
-
-#navbar li {
-    display : inline-block; 
-    border: 1px solid black ;
-    background-color: lightskyblue;
-    padding : 10px; 
-}

@@ -78,3 +78,13 @@ First let create two more vegetable lists:
 * yellow veggies 
 
 Now lets create flexboxes 
+* create one big div around all the veggie lists <-- this will be the flex container 
+* give this div the id = "flexContainer" 
+* give flexContainer the properties
+    * display : flex; 
+    * flex-direction: row;
+    * flex-wrap : wrap; 
+    * justify-content: space-around;
+    for explanation about these terms visit [W3schools Container page](https://www.w3schools.com/css/css3_flexbox_container.asp)
+
+    Play with these different properties to fully understand flexboxes. 
