@@ -3,12 +3,7 @@
 
 /* Skills to include 
 
-Practice frequently used loops combined with console.log:
-For statement
-Do… while statement
-For… of statement
-Switch statement
-Looping through arrays to find a certain value
+
 Practice through simplified real life situations:
 Create an arrow function that logs/returns “Hello, my name is <name>”
 Create a function inside a function
@@ -48,3 +43,57 @@ function remove_veggie(name_array, first){
 
 //console.log(remove_veggie(orange_veggies, false))
 
+function check_veggie_unique1(name_array, name_veggie){
+
+    const length_array = name_array.length
+    let found_element = false; 
+    for(let i = 0 ; i < length_array ; i++){
+        if( name_array[i] == name_veggie){
+            found_element = true 
+        }
+    }
+
+    return found_element; 
+}
+
+// note that this is one of the ways that you can do this. 
+// Have you found a different solution, let me (Merel) know ;)
+
+//console.log(check_veggie_unique1(red_veggies, "Rhubarb"))
+//console.log(check_veggie_unique1(red_veggies, "Rhubarbss"))
+
+function check_veggie_unique2(name_array, name_veggie){
+
+    let found_element = false; 
+    let i = 0 ; 
+    while( i < name_array.length){
+        if( name_array[i] == name_veggie){
+            found_element = true ; // we can also direct write the return statement here
+        }
+        i++; // means the same as i = i + 1 ; 
+    }
+
+    return found_element; 
+}
+
+//console.log(check_veggie_unique2(red_veggies, "Rhubarb"))
+//console.log(check_veggie_unique2(red_veggies, "Rhubarbss"))
+
+
+// works the same way --> but different syntax 
+function check_veggie_unique22(name_array, name_veggie){
+
+    let found_element = false; 
+    let i = 0 ; 
+    do{
+        if( name_array[i] == name_veggie){
+            found_element = true ; // we can also direct write the return statement here
+        }
+        i++; // means the same as i = i + 1 ; 
+    }while( i < name_array.length)
+
+    return found_element; 
+}
+
+//console.log(check_veggie_unique22(red_veggies, "Rhubarb"))
+//console.log(check_veggie_unique22(red_veggies, "Rhubarbss"))

@@ -40,8 +40,26 @@ Write functions that :
     * if the boolean first is true then remove the first element 
     * else remove the last element 
 
+**Need inspiration use [this](https://www.w3schools.com/jsref/jsref_obj_array.asp)**
+
 **Hint: you can check if your functions are correct by using the console.log(name_function)**
+
+You can open the console by clicking right in the browser and then select "open console". 
 
 ***
 
 ## Exercise 2 
+
+Now we want to be able to check if an veggie is already in the array before adding a new veggie. 
+
+Create a function called : check_veggie_unique1 
+* that uses a for-loop 
+* uses a if-statement
+
+Now create the same function but this time with a while-loop (called add_veggie_unique2)
+
+**Check you answers with the script.js file given in the git-repo.**  
+
+*** 
+
+## Exercise 3 
