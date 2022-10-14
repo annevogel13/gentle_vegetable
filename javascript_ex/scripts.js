@@ -108,3 +108,26 @@ function check_veggie_unique22(name_array, name_veggie){
     // finish in the bus 
 
 */ 
+
+/* something like this again 
+function giveMeFunctions(){
+    var functions = [] ;
+    for(var i = 0 ; i< 3 ; i++){
+        console.log("First i = " + i)
+        functions[i] = function (args) {
+            return function(){
+                console.log("Second i = " + i )
+                console.log("Second args = " + args )
+    
+                return args* args; 
+            }
+        }
+    }(i);
+
+    return functions;
+}
+
+var myFunctions = giveMeFunctions();
+for(var i = 0 ; i< myFunctions.length ; i++){
+    console.log(i + ": " + myFunctions[i]())
+} */ 
