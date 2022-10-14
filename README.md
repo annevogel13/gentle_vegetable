@@ -128,3 +128,5 @@ When you prepared your explanation you will give it to the other one. And feel f
 
 Good luck 
 
+Explanation of these exercises are on (youtube)[https://www.youtube.com/playlist?list=PL2diDbboNcUtMFNyGBA1CFCMW-YkHVEo6]. These videos are private and therefore you can only acces them with this link. If you have questions, you can always contact me ;) 
+
