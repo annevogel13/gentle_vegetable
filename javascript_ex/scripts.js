@@ -1,17 +1,10 @@
 
-
-
 /* Skills to include 
-
-
-Practice through simplified real life situations:
 Create an arrow function that logs/returns “Hello, my name is <name>”
 Create a function inside a function
-if/else statements
 Create your own promise
 Use a generator function
 Loop over an array with a generator
-
 */
 
 const green_veggies = ["Spinach", "Kale", "Broccoli", "Cucumber", "Lettuce"]
@@ -30,25 +23,35 @@ function add_veggie(name_veggie, name_array) {
 }
 
 function addVeggieForm(){
-
+    // get the value from the input 
     const new_veggie = document.getElementById("new_veggie").value
-
+    // get an array of the radio buttons 
     var new_veggie_color_array = document.getElementsByName('color_veggie');
+    // create the variable 
     var new_color_veggie = ''
+
+    // loop trough the array to find the radio button that is checked 
     for(i = 0; i < new_veggie_color_array.length; i++) {
         if(new_veggie_color_array[i].checked){
+            // store the value in new_color_veggie 
             new_color_veggie = new_veggie_color_array[i].value
         }
     }
+
+    // write an clear message in the console to track the changements in the website 
     console.log("Add " + new_veggie +" " + new_color_veggie)
 
-
+    // find the correct color list 
     switch(new_color_veggie){
         case "green":
+            // add the veggie to the array 
             add_veggie(new_veggie, green_veggies); 
+            // remove the list items in the html page 
             fixDisplayList('listGreen');
+            // rewrite the list items in the html page 
             displayVeggieListAsUl2(green_veggies, 'listGreen');
             break;
+            // idem for the other cases 
         case "orange":
             add_veggie(new_veggie, orange_veggies); 
             fixDisplayList('listOrange');
@@ -74,7 +77,6 @@ function fixDisplayList(listId) {
     var item = document.getElementById(listId);
     // set all text within this element to ''
     item.textContent = '';
-
 }
 
 function remove_veggie(name_array, first, color) {
@@ -128,9 +130,6 @@ function check_veggie_unique1(name_array, name_veggie) {
 // note that this is one of the ways that you can do this. 
 // Have you found a different solution, let me (Merel) know ;)
 
-//console.log(check_veggie_unique1(red_veggies, "Rhubarb"))
-//console.log(check_veggie_unique1(red_veggies, "Rhubarbss"))
-
 function check_veggie_unique2(name_array, name_veggie) {
 
     let found_element = false;
@@ -144,10 +143,6 @@ function check_veggie_unique2(name_array, name_veggie) {
 
     return found_element;
 }
-
-//console.log(check_veggie_unique2(red_veggies, "Rhubarb"))
-//console.log(check_veggie_unique2(red_veggies, "Rhubarbss"))
-
 
 // works the same way --> but different syntax 
 function check_veggie_unique22(name_array, name_veggie) {
@@ -163,9 +158,6 @@ function check_veggie_unique22(name_array, name_veggie) {
 
     return found_element;
 }
-
-//console.log(check_veggie_unique22(red_veggies, "Rhubarb"))
-//console.log(check_veggie_unique22(red_veggies, "Rhubarbss"))
 
 
 // difficult version 

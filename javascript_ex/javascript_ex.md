@@ -109,4 +109,20 @@ Now make the same button again but this time to remove the last element
 
 ## Exercise 5 
 When we can delete items, we also want to be able to add elements.
-* Create an input and select input 
+* Create an input type text and 4 inputs type radiobutton corresponding to the colors. Need some help use this [link](https://www.w3schools.com/tags/att_input_type_radio.asp).
+* also include labels for the inputs 
+* add a button with an onclick event called addVeggieForm() 
+
+that were the changes to the html file. Now lets continue to the changes in the javascript file. We need to use/change the following functions : 
+* add_veggie(...)
+* fixDisplayList(...)
+* displayVeggieListAsUl2(....)
+
+we are going to use the document.getElementById(..) and document.getElementByName(...) then a forloop to iterate through a array. Then we will use a switch statement to chose the right veggie list. 
+
+Try to figure out how to do this using the internet, debugging in the console. The answer will be in the explanation video. 
+
+## Exercise 6 
+Now we want to be able to delete a specific element from the list. There are multiple ways to do this. For this exercise you will be on your own. If you want hints/directions you can always ask me. 
+
+This was the last javascript assigment. If you managed to do that last assigment. Then you are doing great. 

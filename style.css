@@ -95,3 +95,12 @@ button{
     padding : 10px; 
     margin-bottom: 10px;
 }
+
+#input {
+
+    padding : 10px ; 
+    margin: auto; 
+    margin-bottom : 10px; 
+    background-color: lightgrey;
+
+}
