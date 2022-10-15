@@ -104,3 +104,9 @@ Start by :
     ``onclick="remove_veggie(green_veggies, true, 'green'); ``
 
 * style the button with css however you like ;)
+
+Now make the same button again but this time to remove the last element 
+
+## Exercise 5 
+When we can delete items, we also want to be able to add elements.
+* Create an input and select input 

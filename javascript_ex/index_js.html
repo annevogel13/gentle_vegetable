@@ -20,6 +20,26 @@
     <h1>Gentle Veggies (flexboxes)</h1>
     <h2>Always important to eat your veggies</h2>
 
+    <div id = "input">
+        <label>What veggie do you want to add?</label>
+        <input type="text" id="new_veggie">
+        <br>
+        <label>Which color is this veggie?</label>
+        <input type = "radio" id="addGreen" value = "green" name="color_veggie">
+        <label for="addGreen">Green</label>
+
+        <input type = "radio" id="addOrange" value = "orange" name="color_veggie">
+        <label for="addOrange">Orange</label>
+
+        <input type = "radio" id="addRed" value = "red" name="color_veggie">
+        <label for="addRed">Red</label>
+
+        <input type = "radio" id="addYellow" value = "yellow" name="color_veggie">
+        <label for="addYellow">Yellow</label>
+
+        <button onclick = "addVeggieForm()">Add veggie</button>
+    </div>
+
     <div class="flexContainer">
 
         <div class="veggiesList" id="green">
@@ -60,6 +80,9 @@
 </body>
 <script>
 
+    /* bonus question : 
+        why do I need to call these functions at this place ? 
+    */
     displayVeggieListAsUl2(green_veggies, "listGreen");
     displayVeggieListAsUl(orange_veggies, "listOrange");
     displayVeggieListAsUl(red_veggies, "listRed");

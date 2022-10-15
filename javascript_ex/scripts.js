@@ -25,9 +25,47 @@ console.log(orange_veggies)
 function add_veggie(name_veggie, name_array) {
 
     name_array.push(name_veggie)
+
     return name_array
 }
 
+function addVeggieForm(){
+
+    const new_veggie = document.getElementById("new_veggie").value
+
+    var new_veggie_color_array = document.getElementsByName('color_veggie');
+    var new_color_veggie = ''
+    for(i = 0; i < new_veggie_color_array.length; i++) {
+        if(new_veggie_color_array[i].checked){
+            new_color_veggie = new_veggie_color_array[i].value
+        }
+    }
+    console.log("Add " + new_veggie +" " + new_color_veggie)
+
+
+    switch(new_color_veggie){
+        case "green":
+            add_veggie(new_veggie, green_veggies); 
+            fixDisplayList('listGreen');
+            displayVeggieListAsUl2(green_veggies, 'listGreen');
+            break;
+        case "orange":
+            add_veggie(new_veggie, orange_veggies); 
+            fixDisplayList('listOrange');
+            displayVeggieListAsUl2(orange_veggies, 'listOrange');
+            break;
+        case "red":
+            add_veggie(new_veggie, red_veggies); 
+            fixDisplayList('listRed');
+            displayVeggieListAsUl2(red_veggies, 'listRed');
+            break;
+        case "yellow":
+            add_veggie(new_veggie, yellow_veggies); 
+            fixDisplayList('listYellow');
+            displayVeggieListAsUl2(yellow_veggies, 'listYellow');
+            break;
+    }
+}
 // console.log(add_veggie("Apple", red_veggies))
 
 // assignment 5 
@@ -47,9 +85,7 @@ function remove_veggie(name_array, first, color) {
         name_array.pop(name_array)
     }
 
-
-    // ex 5 now we want to automatically update the list 
-
+    // ex 4 now we want to automatically update the list 
     switch (color) {
         case "green":
             fixDisplayList('listGreen');
@@ -158,40 +194,3 @@ function displayVeggieListAsUl(array_veggies, id_list) {
         ul.appendChild(li);
     }
 }
-
-
-
-
-/*
-    * automate/update the way to display the array_veggies 
-    * add veggie with form-type input + confirmation 
-        --> use an general adding input 
-        --> swtich between the colors 
-    * delete buttons next to the veggies names 
-
-    // finish in the bus 
-
-*/
-
-/* something like this again 
-function giveMeFunctions(){
-    var functions = [] ;
-    for(var i = 0 ; i< 3 ; i++){
-        console.log("First i = " + i)
-        functions[i] = function (args) {
-            return function(){
-                console.log("Second i = " + i )
-                console.log("Second args = " + args )
-    
-                return args* args; 
-            }
-        }
-    }(i);
-
-    return functions;
-}
-
-var myFunctions = giveMeFunctions();
-for(var i = 0 ; i< myFunctions.length ; i++){
-    console.log(i + ": " + myFunctions[i]())
-} */ 
