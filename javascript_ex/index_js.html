@@ -24,12 +24,8 @@
 
         <div class="veggiesList" id="green">
             <h3>Green vegetables</h3>
-            <ul>
-                <li>Spinach</li>
-                <li>Kale</li>
-                <li>Broccoli</li>
-                <li>Cucumber</li>
-                <li>Lettuce</li>
+            <ul id="listGreen">
+                
             </ul>
 
             <img class="img_veggies" src="../images/green_veggies.jpg" alt="picture of green foods">
@@ -37,12 +33,7 @@
 
         <div class="veggiesList" id="orange">
             <h3>Orange vegetables</h3>
-            <ul>
-                <li>Carrots</li>
-                <li>sweet potatoes</li>
-                <li>Peppers</li>
-                <li>Pumpkins</li>
-                <li>Tumeric</li>
+            <ul id="listOrange">
             </ul>
 
             <img class="img_veggies" src="../images/orange_foods.jpg" alt="picture of orange foods">
@@ -50,12 +41,7 @@
 
         <div class="veggiesList" id="red">
             <h3>Red vegetables</h3>
-            <ul>
-                <li>Tomato</li>
-                <li>Beetroot</li>
-                <li>Peppers</li>
-                <li>Radish</li>
-                <li>Rhubarb</li>
+            <ul id = "listRed">
             </ul>
 
             <img class="img_veggies" src="../images/Red-Vegetables-1.jpg" alt="picture of red foods">
@@ -63,17 +49,20 @@
 
         <div class="veggiesList" id="yellow">
             <h3>Yellow vegetables</h3>
-            <ul>
-                <li>Corn</li>
-                <li>Squash</li>
-                <li>Eggfruit</li>
-                <li>Advocado</li>
-                <li>Zucchini</li>
+            <ul id = "listYellow">
             </ul>
 
             <img class="img_veggies" src="../images/yellow-vegetables.jpg" alt="picture of red foods">
         </div>
     </div>
 </body>
+<script>
+    
+    displayVeggieListAsUl2(green_veggies, "listGreen"); 
+    displayVeggieListAsUl(orange_veggies, "listOrange"); 
+    displayVeggieListAsUl(red_veggies, "listRed"); 
+    displayVeggieListAsUl(yellow_veggies, "listYellow"); 
+
+</script>
 
 </html>

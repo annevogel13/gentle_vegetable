@@ -22,38 +22,38 @@ const yellow_veggies = ["Corn", "Squash", "Eggfruit", "Advocado", "Zucchini"]
 
 console.log(orange_veggies)
 
-function add_veggie(name_veggie, name_array){
+function add_veggie(name_veggie, name_array) {
 
     name_array.push(name_veggie)
-    return name_array 
+    return name_array
 }
 
 // console.log(add_veggie("Apple", red_veggies))
 
-function remove_veggie(name_array, first){
+function remove_veggie(name_array, first) {
 
-    if(first == true){
+    if (first == true) {
         name_array.shift(name_array)
-    }else{
+    } else {
         name_array.pop(name_array)
     }
-    
-    return name_array 
+
+    return name_array
 }
 
 //console.log(remove_veggie(orange_veggies, false))
 
-function check_veggie_unique1(name_array, name_veggie){
+function check_veggie_unique1(name_array, name_veggie) {
 
     const length_array = name_array.length
-    let found_element = false; 
-    for(let i = 0 ; i < length_array ; i++){
-        if( name_array[i] == name_veggie){
-            found_element = true 
+    let found_element = false;
+    for (let i = 0; i < length_array; i++) {
+        if (name_array[i] == name_veggie) {
+            found_element = true
         }
     }
 
-    return found_element; 
+    return found_element;
 }
 
 // note that this is one of the ways that you can do this. 
@@ -62,18 +62,18 @@ function check_veggie_unique1(name_array, name_veggie){
 //console.log(check_veggie_unique1(red_veggies, "Rhubarb"))
 //console.log(check_veggie_unique1(red_veggies, "Rhubarbss"))
 
-function check_veggie_unique2(name_array, name_veggie){
+function check_veggie_unique2(name_array, name_veggie) {
 
-    let found_element = false; 
-    let i = 0 ; 
-    while( i < name_array.length){
-        if( name_array[i] == name_veggie){
-            found_element = true ; // we can also direct write the return statement here
+    let found_element = false;
+    let i = 0;
+    while (i < name_array.length) {
+        if (name_array[i] == name_veggie) {
+            found_element = true; // we can also direct write the return statement here
         }
         i++; // means the same as i = i + 1 ; 
     }
 
-    return found_element; 
+    return found_element;
 }
 
 //console.log(check_veggie_unique2(red_veggies, "Rhubarb"))
@@ -81,22 +81,54 @@ function check_veggie_unique2(name_array, name_veggie){
 
 
 // works the same way --> but different syntax 
-function check_veggie_unique22(name_array, name_veggie){
+function check_veggie_unique22(name_array, name_veggie) {
 
-    let found_element = false; 
-    let i = 0 ; 
-    do{
-        if( name_array[i] == name_veggie){
-            found_element = true ; // we can also direct write the return statement here
+    let found_element = false;
+    let i = 0;
+    do {
+        if (name_array[i] == name_veggie) {
+            found_element = true; // we can also direct write the return statement here
         }
         i++; // means the same as i = i + 1 ; 
-    }while( i < name_array.length)
+    } while (i < name_array.length)
 
-    return found_element; 
+    return found_element;
 }
 
 //console.log(check_veggie_unique22(red_veggies, "Rhubarb"))
 //console.log(check_veggie_unique22(red_veggies, "Rhubarbss"))
+
+
+// difficult version 
+function displayVeggieListAsUl2(array_veggies, id_list) {
+    var ul = document.getElementById(id_list);
+
+    array_veggies.forEach(element => {
+
+        var li = document.createElement("li");
+        var text = document.createTextNode(element)
+        li.appendChild(text);
+        ul.appendChild(li);
+    });
+
+}
+
+// easy function 
+function displayVeggieListAsUl(array_veggies, id_list) {
+
+    var ul = document.getElementById(id_list);
+
+    for (let i = 0; i < array_veggies.length; i++) {
+
+        var li = document.createElement("li");
+        var text = document.createTextNode(array_veggies[i])
+        li.appendChild(text);
+        ul.appendChild(li);
+    }
+}
+
+
+
 
 /*
     * automate/update the way to display the array_veggies 
@@ -107,7 +139,7 @@ function check_veggie_unique22(name_array, name_veggie){
 
     // finish in the bus 
 
-*/ 
+*/
 
 /* something like this again 
 function giveMeFunctions(){

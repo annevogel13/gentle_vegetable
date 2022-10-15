@@ -63,3 +63,22 @@ Now create the same function but this time with a while-loop (called add_veggie_
 *** 
 
 ## Exercise 3 
+In the javascript file we have created 4 arrays which contains all the veggies. 
+Lets make our webpage a little bit more dynamic. 
+Execute the following steps: 
+* create a function called displayVeggieListAsUl(.. , .. )
+* as parameters the veggielist and the id of the ul-tag
+* use ``document.getElementById(id_list)``
+* iterature through the veggies_array 
+* use this code in the loop : 
+    ``
+        // creates a new li tag  
+        var li = document.createElement("li");
+        // creates the text for in the li tag 
+        var text = document.createTextNode(array_veggies[i])
+        // adds the text to the li tag 
+        li.appendChild(text);
+        // adds the li content to the ul tag in the html file
+        ul.appendChild(li);
+    ``
+    ***Note this is one of the ways to do it, want more of challenge? Try to use the function [array.forEach](https://www.w3schools.com/js/js_array_iteration.asp#:~:text=JavaScript%20Array%20forEach()) function.
