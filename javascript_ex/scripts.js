@@ -30,6 +30,15 @@ function add_veggie(name_veggie, name_array) {
 
 // console.log(add_veggie("Apple", red_veggies))
 
+// assignment 5 
+function fixDisplayList(listId){
+    // find list to fix 
+    var item = document.getElementById(listId);
+    // set all text within this element to ''
+    item.textContent = ''; 
+
+}
+
 function remove_veggie(name_array, first) {
 
     if (first == true) {
@@ -110,7 +119,6 @@ function displayVeggieListAsUl2(array_veggies, id_list) {
         li.appendChild(text);
         ul.appendChild(li);
     });
-
 }
 
 // easy function 

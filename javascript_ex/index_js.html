@@ -28,6 +28,8 @@
                 
             </ul>
 
+    <button onclick="remove_veggie(green_veggies, true); fixDisplayList('listGreen'); displayVeggieListAsUl2(green_veggies,   'listGreen');">Remove first item</button>
+
             <img class="img_veggies" src="../images/green_veggies.jpg" alt="picture of green foods">
         </div>
 
@@ -58,11 +60,11 @@
 </body>
 <script>
     
-    displayVeggieListAsUl2(green_veggies, "listGreen"); 
-    displayVeggieListAsUl(orange_veggies, "listOrange"); 
-    displayVeggieListAsUl(red_veggies, "listRed"); 
-    displayVeggieListAsUl(yellow_veggies, "listYellow"); 
-
+    displayVeggieListAsUl2(green_veggies,   "listGreen"); 
+    displayVeggieListAsUl(orange_veggies,   "listOrange"); 
+    displayVeggieListAsUl(red_veggies,      "listRed"); 
+    displayVeggieListAsUl(yellow_veggies,   "listYellow"); 
+    
 </script>
 
 </html>
