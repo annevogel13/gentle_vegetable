@@ -49,27 +49,26 @@ function remove_veggie(name_array, first, color) {
 
 
     // ex 5 now we want to automatically update the list 
-    
+
     switch (color) {
         case "green":
             fixDisplayList('listGreen');
             displayVeggieListAsUl2(green_veggies, 'listGreen');
             break;
-            case "orange":
-                fixDisplayList('listOrange');
-                displayVeggieListAsUl2(orange_veggies, 'listOrange');
+        case "orange":
+            fixDisplayList('listOrange');
+            displayVeggieListAsUl2(orange_veggies, 'listOrange');
             break;
-            case "red":
-                fixDisplayList('listRed');
-                displayVeggieListAsUl2(red_veggies, 'listRed');
+        case "red":
+            fixDisplayList('listRed');
+            displayVeggieListAsUl2(red_veggies, 'listRed');
             break;
-            case "yellow":
-                fixDisplayList('listYellow');
-                displayVeggieListAsUl2(yellow_veggies, 'listYellow');
+        case "yellow":
+            fixDisplayList('listYellow');
+            displayVeggieListAsUl2(yellow_veggies, 'listYellow');
             break;
-            default : console.log("error in color code, line 70 script.js")
-            
-        
+        default: console.log("error in color code, line 70 script.js")
+
     }
 
     return name_array

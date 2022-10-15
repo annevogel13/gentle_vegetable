@@ -82,3 +82,25 @@ Execute the following steps:
         ul.appendChild(li);
     ``
     ***Note this is one of the ways to do it, want more of challenge? Try to use the function [array.forEach](https://www.w3schools.com/js/js_array_iteration.asp#:~:text=JavaScript%20Array%20forEach()) function.
+
+## Exercise 4 
+In the beginning of these exercises we created the function remove_veggie(..) . Now we are going to make some changes and implement this feature in the website. 
+Start by : 
+* creating a new function called fixDisplayList(listId)
+  ``
+    // find list to fix 
+    var item = document.getElementById(listId);
+    // set all text within this element to ''
+    item.textContent = '';
+  ``
+
+* adding an color argument 
+* create a switch statement which makes the difference between the 4 colors. 
+
+***Don't forget to add a default case*** 
+
+* now lets add for each list buttons in the html page 
+* give the onclick property the following text : 
+    ``onclick="remove_veggie(green_veggies, true, 'green'); ``
+
+* style the button with css however you like ;)
