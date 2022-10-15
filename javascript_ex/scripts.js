@@ -31,20 +31,45 @@ function add_veggie(name_veggie, name_array) {
 // console.log(add_veggie("Apple", red_veggies))
 
 // assignment 5 
-function fixDisplayList(listId){
+function fixDisplayList(listId) {
     // find list to fix 
     var item = document.getElementById(listId);
     // set all text within this element to ''
-    item.textContent = ''; 
+    item.textContent = '';
 
 }
 
-function remove_veggie(name_array, first) {
+function remove_veggie(name_array, first, color) {
 
     if (first == true) {
         name_array.shift(name_array)
     } else {
         name_array.pop(name_array)
+    }
+
+
+    // ex 5 now we want to automatically update the list 
+    
+    switch (color) {
+        case "green":
+            fixDisplayList('listGreen');
+            displayVeggieListAsUl2(green_veggies, 'listGreen');
+            break;
+            case "orange":
+                fixDisplayList('listOrange');
+                displayVeggieListAsUl2(orange_veggies, 'listOrange');
+            break;
+            case "red":
+                fixDisplayList('listRed');
+                displayVeggieListAsUl2(red_veggies, 'listRed');
+            break;
+            case "yellow":
+                fixDisplayList('listYellow');
+                displayVeggieListAsUl2(yellow_veggies, 'listYellow');
+            break;
+            default : console.log("error in color code, line 70 script.js")
+            
+        
     }
 
     return name_array
