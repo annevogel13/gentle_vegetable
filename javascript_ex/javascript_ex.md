@@ -83,6 +83,8 @@ Execute the following steps:
     ``
     ***Note this is one of the ways to do it, want more of challenge? Try to use the function [array.forEach](https://www.w3schools.com/js/js_array_iteration.asp#:~:text=JavaScript%20Array%20forEach()) function.
 
+*** 
+
 ## Exercise 4 
 In the beginning of these exercises we created the function remove_veggie(..) . Now we are going to make some changes and implement this feature in the website. 
 Start by : 
@@ -107,6 +109,8 @@ Start by :
 
 Now make the same button again but this time to remove the last element 
 
+***
+
 ## Exercise 5 
 When we can delete items, we also want to be able to add elements.
 * Create an input type text and 4 inputs type radiobutton corresponding to the colors. Need some help use this [link](https://www.w3schools.com/tags/att_input_type_radio.asp).
@@ -121,6 +125,8 @@ that were the changes to the html file. Now lets continue to the changes in the 
 we are going to use the document.getElementById(..) and document.getElementByName(...) then a forloop to iterate through a array. Then we will use a switch statement to chose the right veggie list. 
 
 Try to figure out how to do this using the internet, debugging in the console. The answer will be in the explanation video. 
+
+***
 
 ## Exercise 6 
 Now we want to be able to delete a specific element from the list. There are multiple ways to do this. For this exercise you will be on your own. If you want hints/directions you can always ask me. 
