@@ -167,8 +167,12 @@ function displayVeggieListAsUl2(array_veggies, id_list) {
     array_veggies.forEach(element => {
 
         var li = document.createElement("li");
+        var btn = document.createElement("button")
+        btn.className = "delete"
+        
         var text = document.createTextNode(element)
         li.appendChild(text);
+        li.appendChild(btn)
         ul.appendChild(li);
     });
 }
@@ -182,7 +186,11 @@ function displayVeggieListAsUl(array_veggies, id_list) {
 
         var li = document.createElement("li");
         var text = document.createTextNode(array_veggies[i])
+        var btn = document.createElement("button")
+        btn.className = "delete"
+        
         li.appendChild(text);
+        li.appendChild(btn)
         ul.appendChild(li);
     }
 }
